@@ -8,6 +8,10 @@ SSVEP spellers are brain-computer interface (BCI) systems that enable users to t
 
 In SSVEP spellers, each letter (stimulus) is associated with a unique frequency. Users are exposed to these flickering stimuli, and their brain generates corresponding electrical responses. These signals are recorded through EEG, and the data is then used to train an EEGNet model to decode the brain's responses and predict the focused letter, enabling text input through the BCI system.
 
+## ARCHITECTURE
+
+We used EEGNet as our baseline model for classifying EEG signals in our SSVEP speller task, benefiting from its efficient feature extraction with depthwise and separable convolutions. Credit goes to the authors of **"EEGNet: a compact convolutional neural network for EEG-based brain–computer interfaces"** (Lawhern et al., 2018, *Journal of Neural Engineering*, DOI: [10.1088/1741-2552/aace8c](https://doi.org/10.1088/1741-2552/aace8c)).
+
 ## DATA
 
 The data used in this project comes from a benchmark SSVEP dataset acquired with a 40-target BCI speller, as described by Yijun Wang et al. in their paper [A Benchmark Dataset for SSVEP-Based Brain-Computer Interfaces](https://pubmed.ncbi.nlm.nih.gov/27849543/). The dataset includes 64-channel EEG data from 35 healthy subjects (8 experienced and 27 naïve), recorded during a cue-guided target selection task. The virtual keyboard of the speller consisted of 40 visual flickers, with frequencies ranging from 8 Hz to 15.8 Hz, coded using a joint frequency and phase modulation (JFPM) approach. Each trial lasted five seconds, and the data includes six blocks of 40 trials per subject, with the stimuli presented in a random order. This high-quality dataset is valuable for benchmarking stimulus coding, target identification methods, and BCI performance evaluation, and is freely available for further research and computational modeling.
