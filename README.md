@@ -23,3 +23,5 @@ In this project, we explored several data augmentation techniques to improve the
 5. **Frequency Masking**: Random sections of the frequency spectrum are masked out, forcing the model to focus on the remaining relevant frequencies and simulating missing or corrupted frequency data.
 6. **Time Masking**: Random time segments in the EEG signal are masked, which simulates missing or corrupted time-domain data, ensuring the model can handle incomplete signals.
 
+ time masking was the most effective augmentation technique for improving the model’s performance in the context of SSVEP spellers, while the other techniques had limited impact.
+
