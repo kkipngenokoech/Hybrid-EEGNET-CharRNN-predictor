@@ -29,3 +29,5 @@ In this project, we explored several data augmentation techniques to improve the
 
  time masking was the most effective augmentation technique for improving the model’s performance in the context of SSVEP spellers, while the other techniques had limited impact.
 
+ ## HOW TO REPRODUCE OUR WORK
+
