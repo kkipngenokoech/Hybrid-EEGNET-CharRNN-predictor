@@ -10,7 +10,7 @@ In SSVEP spellers, each letter (stimulus) is associated with a unique frequency.
 
 ## ARCHITECTURE
 
-We used EEGNet as our baseline model for classifying EEG signals in our SSVEP speller task, benefiting from its efficient feature extraction with depthwise and separable convolutions. Credit goes to the authors of **"EEGNet: a compact convolutional neural network for EEG-based brain–computer interfaces"** (Lawhern et al., 2018, *Journal of Neural Engineering*, DOI: [10.1088/1741-2552/aace8c](https://doi.org/10.1088/1741-2552/aace8c)).
+We used EEGNet as our baseline model for classifying EEG signals in our SSVEP speller task, benefiting from its efficient feature extraction with depthwise and separable convolutions. Credit goes to the authors of **"EEGNet: a compact convolutional neural network for EEG-based brain–computer interfaces"** (Lawhern et al., 2018, *Journal of Neural Engineering*, DOI: [10.1088/1741-2552/aace8c](https://doi.org/10.1088/1741-2552/aace8c)). Their models can be found on GitHub at this [link](https://github.com/vlawhern/arl-eegmodels)
 
 ## DATA
 
