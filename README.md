@@ -31,5 +31,13 @@ In this project, we explored several data augmentation techniques to improve the
 
  ## HOW TO REPRODUCE OUR WORK
 
- 
+1. Download the Benchmark dataset from [here](http://bci.med.tsinghua.edu.cn/download.html).
+2. CLone this repo or copy the EEGNET_CharRNN [notebook](./EEGNET_CharRNN.ipynb).
+3. Edit `subject_rawdata_dir` to point to the directory your dataset is located
+4. Run the notebook
+
+ ## CONCLUSION
+
+ To conclude, we found that time masking is a promising augmentation for EEG classification tasks. We also demonstrated that our hybrid  model can decode words at high accuracy. To scale this system for more complex tasks like paragraph-level decoding, advanced language models such as GPT will be essential. By utilizing data augmentation and language models, we are paving the way for more accurate SSVEP speller systems that can help people with disabilities communicate.
+
 
