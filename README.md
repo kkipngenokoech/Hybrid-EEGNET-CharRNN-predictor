@@ -31,10 +31,10 @@ In this project, we explored several data augmentation techniques to improve the
 
  ## HOW TO REPRODUCE OUR WORK
 
-1. Download the Benchmark dataset from [here](http://bci.med.tsinghua.edu.cn/download.html).
-2. CLone this repo or copy the EEGNET_CharRNN [notebook](./EEGNET_CharRNN.ipynb).
-3. Edit `subject_rawdata_dir` to point to the directory your dataset is located
-4. Run the notebook
+1. Download the Tsinghua Benchmark dataset from [here](http://bci.med.tsinghua.edu.cn/download.html).
+2. CLone this repo or copy the main files: SSVEP_Preprocessing, EEGNet_WithDataAugmentation, and EEGNET_CharRNN.
+3. For data augmentations: Run SSVEP_Preprocessing on the Benchmark dataset and give those output directories to EEGNet_WithDataAugmentation. Change the config depending on choice of data augmentations. Run the notebook.
+4. For the hybrid model: Change `subject_rawdata_dir` to point to the directory that the raw Benchmark data is located. Optionally choose word list for hybrid model evaluation. Run the notebook.
 
  ## CONCLUSION
 
